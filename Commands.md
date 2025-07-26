@@ -24,242 +24,247 @@ Use `{prefix}help` to see all available commands or `{prefix}help [command]` for
 
 ---
 
-## 🏠 General Commands
-
-Basic commands and help functionality.
+## General
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `help` | Get help with commands | `help <command>` | - |
+|---------|-------------|-------|---------|
+| `help` | A list of all categories. |  |  |
+| `ping` |  |  |  |
+| `search` | Search for commands. | `[query]` |  |
 
 ---
 
-## 👤 Account Commands
-
-Manage your Discord account settings and backups.
+## Account
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `account` | Account commands menu | `account` | `acc` |
-| `backups` | List your account backups | `backups` | - |
-| `hypesquad` | Change your hypesquad house | `hypesquad [house]` | `changehypesquad` |
-| `status` | Change your status | `status [status]` | `changestatus` |
-| `customstatus` | Set custom status | `customstatus [text]` | `changecustomstatus` |
-| `clearstatus` | Clear custom status | `clearstatus` | - |
-| `playing` | Set playing status | `playing [game]` | `changeplaying` |
-| `streaming` | Set streaming status | `streaming [title]` | `changestreaming` |
-| `nickname` | Change nickname | `nickname [name]` | `changenickname`, `nick` |
-| `clearnickname` | Clear nickname | `clearnickname` | `resetnickname`, `clearnick` |
-| `discordtheme` | Change Discord theme | `discordtheme [theme]` | `changetheme` |
-| `yoinkrpc` | Copy user's rich presence | `yoinkrpc [user]` | `rpcyoink`, `stealrpc` |
-
-**Account Status Options:**
-- `online` - Green dot
-- `idle` - Yellow dot  
-- `dnd` - Red dot
-- `invisible` - Offline appearance
-
-**Hypesquad Houses:**
-- `bravery` - Purple house
-- `brilliance` - Yellow house
-- `balance` - Green house
+|---------|-------------|-------|---------|
+| `backups` | List your backups. |  |  |
+| `backup` | Backup commands. |  |  |
+| `hypesquad` | Change your hypesquad. | `[hypesquad]` | `changehypesquad` |
+| `status` | Change your status. | `[status]` | `changestatus` |
+| `customstatus` | Change your custom status. | `[status]` | `changecustomstatus` |
+| `clearstatus` | Clear your custom status. |  |  |
+| `playing` | Change your playing status. | `[status]` | `changeplaying` |
+| `streaming` | Change your streaming status. | `[status]` | `changestreaming` |
+| `nickname` | Change your nickname. | `[nickname]` | `changenickname, nick` |
+| `clearnickname` | Clear your nickname. |  | `resetnickname, clearnick, resetnick` |
+| `discordtheme` | Change your discord theme. | `[theme]` | `changetheme` |
+| `yoinkrpc` | Yoink someone's RPC. | `[user]` | `rpcyoink, stealrpc, stealrichpresence, yoinkrichpresence, clonerpc, clonerichpresence` |
+| `yoinkmemberrpc` | yoinkrpc for member pings only! | `[member]` |  |
 
 ---
 
-## 🎮 Fun Commands
-
-Entertainment and games.
+## Fun
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `fun` | Fun commands menu | `fun <page>` | - |
-| `rickroll` | Never gonna give you up | `rickroll` | - |
-| `coinflip` | Flip a coin | `coinflip` | `cf` |
-| `iq` | Get user's IQ rating | `iq [user]` | `howsmart`, `iqrating` |
-| `howgay` | Get gayness percentage | `howgay [user]` | `gay`, `gayrating` |
-| `howblack` | Get blackness percentage | `howblack [user]` | `black`, `blackrating` |
-| `pp` | Get user's size | `pp [user]` | `dick`, `dicksize`, `penis` |
-| `rps` | Rock paper scissors | `rps` | - |
+|---------|-------------|-------|---------|
+| `fun` | Fun commands. |  |  |
+| `rickroll` | Never gonna give you up. |  |  |
+| `coinflip` | Flip a coin. |  | `cf` |
+| `iq` | Get the IQ of a user. | `[user]` | `howsmart, iqrating` |
+| `howgay` | Get the gayness of a user. | `[user]` | `gay, gayrating` |
+| `howblack` | Get the blackness of a user. | `[user]` | `black, blackrating` |
+| `pp` | Get the size of a user's dick. | `[user]` | `dick, dicksize, penis` |
+| `rps` | Play rock paper scissors |  |  |
+| `slots` | Play a slot machine. |  | `slotmachine, slot` |
+| `encodemorsecode` | Encode text to morse code. | `[text]` | `morsecode` |
+| `decodemorsecode` | Decode morse code to text. | `[morse]` | `morsecodedecode` |
+| `blocksend` | Send a message to a blocked user. | `[user] [message]` |  |
+| `randomdata` | Generate random data. | `[type]` |  |
+| `kanye` | Random kanye quote. |  |  |
+| `socialcredit` | Get a user's social credit score. | `[user]` | `socialcreditscore, socialcreditrating, socialcredits, socialrating, socialscore` |
+| `dice` | Roll a dice with a specific side count. | `[sides]` | `roll` |
+| `rainbow` | Create rainbow text. | `[text]` | `rainbowtext` |
+| `rainbowreact` | Create a rainbow reaction | `['[msg id]']` |  |
+| `dox` | Dox a user. | `['[user]']` |  |
+| `meme` | Gets a random meme. |  | `getmeme, randommeme` |
+| `dadjoke` | Get a dad joke. |  |  |
+| `insult` | Get a random insult. |  |  |
+| `compliment` | Get a random compliment. |  |  |
+| `catfact` | Get a random cat fact. |  |  |
+| `yomomma` | Get a yo momma joke. |  |  |
+| `8ball` | Ask the magic 8ball a question. | `[question]` | `magic8ball, ask8ball` |
+| `fakenitro` | Fake a nitro gift. |  |  |
+| `hyperlink` | Create a hyperlink | `[link] [text]` | `hyperl` |
+| `aura` | Check a user's aura. | `[user]` | `karma` |
+| `gyatt` | See if they've got GYATTT | `[user]` | `gyat` |
+| `playsound` | Play a 5 second sound. | `[mp3_url]` |  |
 
 ---
 
-## 📊 Info Commands
-
-Information gathering and lookup tools.
+## Img
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `info` | Info commands menu | `info <page>` | `information` |
-| `iplookup` | Lookup IP address info | `iplookup [ip]` | `ipinfo` |
-| `userinfo` | Get user information | `userinfo <user>` | `ui` |
+|---------|-------------|-------|---------|
+| `img` | Image commands. |  | `image` |
+| `gato` | Get a random cat picture. |  | `cat, catpic` |
+| `doggo` | Get a random dog picture. |  | `dog, dogpic` |
+| `bird` | Get a random bird picture. |  | `birb, birdpic` |
+| `fox` | Get a random fox picture. |  | `foxpic` |
+| `achievement` | Make a custom Minecraft achievement. | `[icon] [text]` | `mcachievement` |
+| `challenge` | Make a custom Minecraft challenge. | `[icon] [text]` | `mcchallenge` |
+| `discordmessage` | Create a fake Discord message. | `[user] [message]` | `fakediscordmessage, fakediscordmsg, fakediscord` |
+| `searchimage` | Search for an image on google | `[query]` | `searchimg, imgsearch, imagesearch` |
 
 ---
 
-## 🖼️ Image Commands
-
-Image manipulation and generation.
+## Info
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `img` | Image commands menu | `img <page>` | - |
-| (Various image manipulation commands) | | | |
+|---------|-------------|-------|---------|
+| `info` | Information commands. |  | `information` |
+| `iplookup` | Look up an IP address. | `[ip]` | `ipinfo` |
+| `userinfo` | Get information about a user. | `[user]` | `ui` |
+| `serverinfo` | Get information about the server. |  | `si` |
+| `servericon` | Get the icon of the server. |  |  |
+| `webhookinfo` | Get information about a webhook. | `[webhook url]` | `wi` |
+| `mutualservers` | Get a list of all members in mutual servers. | `[server id]` | `mutualservermembers` |
+| `avatar` | Get the avatar of a user. | `[user]` | `av` |
+| `tickets` | Get a list of all tickets available in the server. |  |  |
+| `hiddenchannels` | List all hidden channels. |  | `privchannels, privatechannels` |
+| `crypto` | Lookup current data on a cryptocurrency. | `[cryptocurrency]` |  |
+| `bitcoin` | Get the current data on Bitcoin. |  | `btc` |
+| `ethereum` | Get the current data on Ethereum. |  | `eth` |
+| `tether` | Get the current data on Tether. |  | `usdt` |
+| `dogecoin` | Get the current data on Dogecoin. |  | `doge` |
+| `timestamp` | Create a relative dynamic timestamp. | `[DD MM YYYY HH:MM:SS]` |  |
 
 ---
 
-## 📝 Text Commands
-
-Text manipulation and formatting tools.
+## Mod
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `text` | Text commands menu | `text <page>` | - |
-| (Various text manipulation commands) | | | |
+|---------|-------------|-------|---------|
+| `mod` | Moderation commands. |  | `moderation` |
+| `clear` | Clear a number of messages. | `[number]` | `purge` |
+| `dmpurge` | Purge a number of messages in a DM. | `[number] [user id]` |  |
+| `purgechat` | Purge the entire chat. |  |  |
+| `dumpchat` | Get the chats history. | `[message count] [channel id]` |  |
+| `firstmessage` | Get the first message in the chat. |  |  |
+| `lock` | Lock the channel. |  |  |
+| `unlock` | Unlock the channel. |  |  |
+| `banlist` | List all banned members. |  |  |
+| `ban` | Ban a member from the command server. | `[member]` |  |
+| `unban` | Unban a member from the command server. | `[id]` |  |
+| `kick` | Kick a member from the command server. | `[member]` |  |
+| `mute` | Mute a member. | `[member] [length]` | `timeout` |
+| `unmute` | Unmute a member. | `[member]` | `untimeout` |
+| `poll` | Create a poll. | `[question] [options]` |  |
+| `discordpoll` | Create a poll using discord's poll feature. | `[question] [options]` |  |
 
 ---
 
-## 🛠️ Utility Commands
-
-Useful tools and utilities.
+## Nsfw
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `util` | Utility commands menu | `util <page>` | - |
-| (Various utility commands) | | | |
+|---------|-------------|-------|---------|
+| `nsfw` | NSFW commands. |  | `notsafeforwork` |
+| `hentai` | Get a random hentai image. |  |  |
+| `thighs` | Get a random thighs pic. |  | `thigh` |
+| `ass` | Get a random ass pic. |  |  |
+| `boobs` | Get a random tit pic. |  | `tits, tittys, titty` |
+| `pussy` | Get a random pussy pic. |  |  |
+| `porn` | Get a random porn gif. |  | `porngif` |
+| `neko` | Get a random neko image. |  |  |
 
 ---
 
-## 🛡️ Moderation Commands
-
-Server management tools (use with caution).
+## Text
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `mod` | Moderation commands menu | `mod <page>` | - |
-| (Various moderation commands) | | | |
+|---------|-------------|-------|---------|
+| `text` | Text commands. |  |  |
+| `shrug` | Shrug your arms. |  |  |
+| `tableflip` | Flip the table. |  |  |
+| `unflip` | Put the table back. |  |  |
+| `lmgtfy` | Let me Google that for you. | `[search]` | `letmegooglethatforyou` |
+| `fakepurge` | Flood chat with blank messages |  |  |
+| `ascii` | Create ascii text art from text. | `[text]` |  |
+| `aesthetic` | Make your text aesthetic. | `[text]` |  |
+| `chatbypass` | Bypass chat filters. | `[text]` | `bypass` |
+| `regional` | Make your text out of emojis. | `[text]` |  |
+| `randomcase` | Make your text random case. | `[text]` |  |
+| `animate` | Animate your text. | `[text]` |  |
+| `cembed` | Create a custom embed. | `[title] [description] [footer] [colour] [image]` | `customembed` |
+| `passwordgen` | Generate a password. | `[length]` | `genpassword` |
+| `codeblock` | Create a codeblock. | `[language] [code]` | `block` |
+| `json` | Create a json codeblock. | `[json]` | `jblock` |
+| `python` | Create a python codeblock. | `[python]` | `pyblock` |
+| `js` | Create a javascript codeblock. | `[javascript]` | `jsblock, javascript` |
+| `html` | Create a html codeblock. | `[html]` | `htmlblock` |
+| `css` | Create a css codeblock. | `[css]` | `cssblock` |
+| `java` | Create a java codeblock. | `[java]` | `javablock` |
+| `c` | Create a c codeblock. | `[c]` | `cblock` |
+| `cpp` | Create a cpp codeblock. | `[cpp]` | `cppblock` |
+| `php` | Create a php codeblock. | `[php]` | `phpblock` |
+| `lua` | Create a lua codeblock. | `[lua]` | `luablock` |
+| `reverse` | Reverse your text. | `[text]` |  |
 
 ---
 
-## 🎨 Theming Commands
-
-Theme management and customization.
+## Theming
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `theming` | Theming commands menu | `theming <page>` | - |
-| (Various theming commands) | | | |
+|---------|-------------|-------|---------|
+| `theming` | Theme commands. |  | `design` |
+| `themes` | Lists all your themes. |  |  |
+| `theme` | Theme commands. |  |  |
+| `imagemode` | Set your theme style to image. |  | `imgmode` |
+| `textmode` | Set your theme style to codeblock. |  | `codeblockmode` |
+| `richembedmode` | Set your theme style to embed. |  | `embedmode` |
+| `richembedwebhook` | Set your rich embed webhook. | `[webhook]` |  |
 
 ---
 
-## 🎯 Sniper Commands
-
-Nitro and Privnote sniping functionality.
+## Util
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `sniper` | Sniper commands menu | `sniper <page>` | - |
-| (Various sniper commands) | | | |
+|---------|-------------|-------|---------|
+| `util` | Utility commands. |  | `utilities, utility, utils` |
+| `config` | Configure ghost. |  | `cfg` |
+| `restart` | Restart the bot. |  | `reboot, reload` |
+| `quit` | Quit the bot. |  | `exit` |
+| `settings` | View ghost's settings. |  |  |
+| `prefix` | Set the prefix | `[prefix]` |  |
+| `clearcache` | Clear the cache |  |  |
+| `richpresence` | Toggle rich presence |  | `rpc` |
+| `resetrichpresence` | Reset rich presences to defaults. |  | `resetrpc, rpcreset` |
+| `specs` | View your computer's specs |  |  |
+| `sessionspoofer` | Spoof your session | `[device]` | `sessionspoof, spoofsession` |
+| `uptime` | View the bot's uptime |  |  |
+| `allcmds` | List all commands |  |  |
+| `clearconsole` | Clear the console |  |  |
+| `commandhistory` | Get the history of commands used. |  | `cmdhistory` |
+| `spypet` | Get a list of every message a member has sent in mutual servers. | `[member]` |  |
 
 ---
 
-## 🔞 NSFW Commands
-
-Adult content commands (18+ only).
+## Abuse
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `nsfw` | NSFW commands menu | `nsfw <page>` | - |
-| (Various NSFW commands) | | | |
-
-⚠️ **Warning**: These commands are for adult users only and should be used responsibly.
+|---------|-------------|-------|---------|
+| `abuse` | Abusive commands. |  |  |
+| `spam` | Spam a channel. | `[amount] [message]` |  |
+| `servernuke` | Nuke a server. |  | `nukeserver` |
+| `channelflood` | Flood guild with a crap ton of channels. | `[channel name]` |  |
+| `channelspam` | Flood a channel with a message of your choosing. | `[msg amount] [message]` |  |
+| `channelping` | Ping a user in every available channel. | `['[user] [ping amount]']` |  |
+| `massping` | Ping every user in a server. | `[msg amount] [guild id]` | `hahafunny` |
+| `pollspam` | Flood a channel with polls. |  |  |
 
 ---
 
-## ⚠️ Abuse Commands
-
-Potentially harmful commands (use with extreme caution).
+## Sniper
 
 | Command | Description | Usage | Aliases |
-|---------|-------------|--------|---------|
-| `abuse` | Abuse commands menu | `abuse <page>` | - |
-| `spam` | Spam messages | `spam [amount] [message]` | - |
-| `servernuke` | Server destruction | `servernuke` | `nukeserver` |
-| `channelflood` | Create many channels | `channelflood [name]` | - |
-| `channelspam` | Spam channel messages | `channelspam [amount] [message]` | - |
-| `channelping` | Ping user in all channels | `channelping [user] [amount]` | - |
-| `massping` | Ping all server users | `massping [amount] [guild_id]` | `hahafunny` |
-| `pollspam` | Spam polls | `pollspam` | - |
-
-🚨 **EXTREME WARNING**: These commands can result in immediate account termination. Use only on test servers with disposable accounts. We are not responsible for any consequences.
-
----
-
-## Command Categories Summary
-
-| Category | Count | Risk Level | Description |
-|----------|-------|------------|-------------|
-| General | 1 | ✅ Safe | Basic help commands |
-| Account | 12+ | ⚠️ Low | Account management |
-| Fun | 8+ | ✅ Safe | Entertainment commands |
-| Info | 3+ | ✅ Safe | Information gathering |
-| Image | 10+ | ✅ Safe | Image manipulation |
-| Text | 10+ | ✅ Safe | Text tools |
-| Utility | 15+ | ✅ Safe | Useful utilities |
-| Moderation | 10+ | ⚠️ Medium | Server management |
-| Theming | 5+ | ✅ Safe | Customization |
-| Sniper | 5+ | ⚠️ Medium | Content sniping |
-| NSFW | 8+ | ⚠️ Medium | Adult content |
-| Abuse | 8+ | 🚨 High | Destructive actions |
-
-## Command Tips
-
-### Safe Usage
-1. **Test commands** on private servers first
-2. **Read descriptions** carefully before using
-3. **Avoid abuse commands** unless absolutely necessary
-4. **Use appropriate channels** for NSFW content
-
-### Performance
-1. **Use aliases** for frequently used commands
-2. **Check help pages** with `{prefix}help [command]`
-3. **Use command menus** to browse categories
-
-### Risk Management
-1. **Never use abuse commands** on important servers
-2. **Be cautious with moderation** commands
-3. **Respect server rules** and Discord TOS
-4. **Use alt accounts** for high-risk activities
-
-## Examples
-
-### Basic Usage
-```
-.help                    # Show all commands
-.help userinfo          # Get help for specific command
-.userinfo @someone      # Get user information
-.coinflip               # Flip a coin
-```
-
-### Account Management
-```
-.status dnd             # Set status to Do Not Disturb
-.customstatus Coding    # Set custom status
-.nickname NewName       # Change nickname
-.hypesquad bravery     # Join purple hypesquad
-```
-
-### Information
-```
-.iplookup 8.8.8.8      # Lookup Google's DNS
-.userinfo              # Your own info
-.userinfo @friend      # Friend's info
-```
-
-## Getting More Help
-
-- Use `{prefix}[category]` to see category-specific commands
-- Use `{prefix}help [command]` for detailed command help
-- Check the [Troubleshooting Guide](Troubleshooting.md) for issues
-- Join our [Discord community](https://discord.gg/ayz7eYvFsm) for support
+|---------|-------------|-------|---------|
+| `sniper` | Sniper commands. |  |  |
+| `snipers` | List all snipers. |  |  |
+| `sniperstatus` | Check the status of a sniper. | `[sniper]` |  |
+| `ignoreinvalidcodes` | Toggle ignoring invalid codes for a sniper. | `[sniper]` | `sniperignore, ignoreinvalid` |
+| `nitrosniper` | Toggle the Nitro sniper. | `[on/off]` |  |
+| `privnotesniper` | Toggle the Privnote sniper. | `[on/off]` |  |
+| `webhooksetup` | Setup webhooks for all snipers. |  | `setupwebhooks` |
 
 ---
 
