@@ -9,7 +9,7 @@ nav_order: 2
 
 If you're using a Windows machine or an M chip Mac then you can use the pre-built binaries available on release. This guide is for how to run Ghost from source code. Ghost requires Python 3.10+ installed!
 
-> ⚠️ Warning
+> ### ⚠️ Warning
 > Using Ghost is against Discord's TOS and <ins>can</ins> result in account termination! To avoid termination, do not use any commands in bigger servers especially ones moderated by Discord staff and do not use any of the abuse commands. I do not take any responsibility for the actions that may be caused by using Ghost. Please use with caution!
 
 ### 1. Clone the repository
@@ -34,7 +34,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-> ℹ️ Note
+> ### ℹ️ Note
 > If `python`, `python3` or `py` isn't recognized, make sure Python 3.10+ is installed and added to your system PATH.
 
 ### 3. Install required dependencies 
