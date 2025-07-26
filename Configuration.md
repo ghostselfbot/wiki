@@ -10,13 +10,15 @@ Ghost uses a JSON configuration file (`config.json`) to store settings. This gui
 
 ## Configuration File Location
 
-The configuration file is located at `config.json` in the Ghost root directory. If it doesn't exist, copy it from `config.example.json`:
+The configuration file is located at `config.json` in your Application Support directory depending on what OS you are using. See the list below to find where Ghost's data directory is:
 
-```bash
-cp config.example.json config.json
-```
+- Windows: `%appdata%\Ghost`
+- Linux: `~/.config/Ghost`
+- Mac: `~/Library/Application Support/Ghost`
 
 ## Basic Configuration
+
+The best and easiest way to configure Ghost is through the GUI. This will give you much better versatility and control. If you do not know how JSON works or what you are doing please do not touch the JSON file!  
 
 ### Essential Settings
 
@@ -48,7 +50,7 @@ cp config.example.json config.json
 
 | Setting | Description | Required |
 |---------|-------------|----------|
-| `serpapi` | SerpAPI key for enhanced search functionality | ❌ Optional |
+| `serpapi` | SerpAPI key for enhanced search functionality | Required for `searchimage` command. |
 
 ### Message Settings
 
@@ -64,7 +66,9 @@ cp config.example.json config.json
 | Setting | Description | Options | Default |
 |---------|-------------|---------|---------|
 | `auto_delete_delay` | Seconds before auto-deleting command messages | Any number | `15` |
-| `style` | Message display style | `"image"`, `"codeblock"` | `"image"` |
+| `style` | Message display style | `"image"`, `"codeblock"`, `"embed"` | `"image"` |
+
+ℹ️ **Note**: Embed message style will only work if you enter a webhook embed in the `richembedwebhook` section of the config. If this is not given it will resort back to codeblocks!
 
 ### Session Spoofing
 
@@ -163,7 +167,7 @@ Ghost includes snipers for Nitro codes and Privnote links:
 }
 ```
 
-URL for sending rich embed notifications.
+Webhook URL for using the embed message style.
 
 ## Complete Configuration Example
 
@@ -211,68 +215,6 @@ URL for sending rich embed notifications.
     "rich_embed_webhook": ""
 }
 ```
-
-## Configuration Tips
-
-### Security Best Practices
-
-1. **Never share your config file** - it contains sensitive tokens
-2. **Use environment variables** for tokens in production:
-   ```bash
-   export GHOST_TOKEN="your_token_here"
-   ```
-3. **Add config.json to .gitignore** to prevent accidental commits
-4. **Regularly rotate your Discord token** if compromised
-
-### Performance Optimization
-
-1. **Disable unused snipers** to reduce resource usage
-2. **Adjust auto_delete_delay** based on your needs
-3. **Use codeblock style** for faster message rendering
-
-### Webhook Setup
-
-To set up Discord webhooks for notifications:
-
-1. Go to your Discord server settings
-2. Navigate to Integrations → Webhooks
-3. Create a new webhook
-4. Copy the webhook URL
-5. Paste it in the appropriate config field
-
-## Configuration Validation
-
-Ghost automatically validates your configuration on startup. Common issues:
-
-- **Invalid JSON syntax** - Use a JSON validator
-- **Missing required fields** - Check against the example
-- **Invalid token format** - Ensure token is correct
-- **Invalid theme name** - Use an existing theme
-
-## Environment Variables
-
-You can override config values with environment variables:
-
-```bash
-export GHOST_TOKEN="your_token"
-export GHOST_PREFIX="!"
-export GHOST_THEME="custom_theme"
-```
-
-## Configuration Management
-
-### Backup Configuration
-```bash
-cp config.json config.backup.json
-```
-
-### Reset to Defaults
-```bash
-cp config.example.json config.json
-```
-
-### Update Configuration
-Edit the file directly or use the GUI configuration panel (if available).
 
 ---
 
