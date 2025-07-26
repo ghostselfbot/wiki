@@ -8,7 +8,7 @@ permalink: /
 # Ghost <img width="150" align="right" src="https://github.com/user-attachments/assets/00fc815f-4cb3-4078-94bf-e16cf3fc9fea">
 Ghost is a powerful and customisable Discord selfbot designed to enhance user experience with a suite of over 150 commands and a bespoke graphical user interface (GUI). Developed in Python, it offers advanced features for personal automation and interaction within Discord.
 
-> ⚠️ Warning
+> ### ⚠️ Warning  
 > Using Ghost is against Discord's TOS and <ins>can</ins> result in account termination! To avoid termination, do not use any commands in bigger servers especially ones moderated by Discord staff and do not use any of the abuse commands. I do not take any responsibility for the actions that may be caused by using Ghost. Please use with caution!
 
 > Use the below commands to quickly setup Ghost from source code
