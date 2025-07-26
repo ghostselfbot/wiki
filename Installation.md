@@ -1,3 +1,10 @@
+---
+layout: default
+title: Installation
+nav_order: 2
+---
+
+
 # Installation
 
 If you're using a Windows machine or an M chip Mac then you can use the pre-built binaries available on release. This guide is for how to run Ghost from source code. Ghost requires Python 3.10+ installed!
