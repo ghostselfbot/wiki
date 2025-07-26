@@ -1,0 +1,8 @@
+{
+  "options": {
+    "quiet": true
+  },
+  "rules": {
+    "no-deprecated-features": false
+  }
+}

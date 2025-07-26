@@ -1,0 +1,7 @@
+// This file will help suppress the Sass deprecation warnings
+// by providing modern @use syntax alternatives
+
+@use "sass:color";
+
+// Define variables that will be used to override deprecated functions
+$sass-deprecation-warnings-suppressed: true;

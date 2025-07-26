@@ -1,0 +1,20 @@
+// Modern Sass functions to replace deprecated ones
+
+@use "sass:color";
+
+// Define a modern replacement for the darken() function
+@function modern-darken($color, $amount) {
+  @return color.adjust($color, $lightness: -$amount);
+}
+
+// Define a modern replacement for map-get
+@function modern-map-get($map, $key) {
+  @if variable-exists(map) {
+    @return map.get($map, $key);
+  } @else {
+    @return null;
+  }
+}
+
+// Variables to indicate we're using modern syntax
+$using-modern-sass: true;

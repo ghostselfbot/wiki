@@ -1,0 +1,23 @@
+# Theme configuration
+theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
+plugins:
+- jekyll-remote-theme
+- jekyll-seo-tag
+title: Ghost
+description: Comprehensive documentation for the Ghost Discord selfbot project
+show_downloads: false
+
+# Just the Docs Configuration
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+baseurl: ""  # Empty for custom domain or for root path of GitHub Pages
+url: "https://wiki.ghostt.cc"  # Your custom domain
+aux_links: {}  # Empty but required for header_custom.html
+
+# Sass configuration to suppress deprecation warnings
+sass:
+  quiet_deps: true
+  style: compressed

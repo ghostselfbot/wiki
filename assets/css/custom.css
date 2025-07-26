@@ -1,0 +1,24 @@
+/* Custom styles for Ghost Wiki */
+
+/* Icon styles for navbar */
+.icon-link {
+  display: inline-block;
+  padding: 0.25em;
+  transition: transform 0.2s;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+}
+
+.icon-link svg {
+  fill: currentColor;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icon-link svg {
+    height: 20px;
+    width: 20px;
+  }
+}

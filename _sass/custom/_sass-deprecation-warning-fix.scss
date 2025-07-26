@@ -1,0 +1,7 @@
+// This file is used to suppress Sass deprecation warnings
+// It will be automatically loaded by Just the Docs theme
+
+// Use @use instead of @import for Sass modules
+// This is the modern syntax recommended by Sass
+
+$color-scheme-ignore-warnings: true;

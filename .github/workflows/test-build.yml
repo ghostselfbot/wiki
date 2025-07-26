@@ -1,0 +1,41 @@
+name: Test Jekyll Build
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          
+      - name: Install dependencies
+        run: bundle install
+          
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+          
+      - name: Check build output
+        run: |
+          echo "Checking if site was built correctly..."
+          if [ -d "_site" ]; then
+            echo "Site directory exists"
+            echo "Checking for CSS files..."
+            find _site/assets -name "*.css" | wc -l
+            echo "Checking for JS files..."
+            find _site/assets -name "*.js" | wc -l
+          else
+            echo "Site directory does not exist - build failed"
+            exit 1
+          fi
