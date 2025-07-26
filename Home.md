@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 1
+---
+
+
 # Ghost <img width="150" align="right" src="https://github.com/user-attachments/assets/00fc815f-4cb3-4078-94bf-e16cf3fc9fea">
 Ghost is a powerful and customisable Discord selfbot designed to enhance user experience with a suite of over 150 commands and a bespoke graphical user interface (GUI). Developed in Python, it offers advanced features for personal automation and interaction within Discord.
 
