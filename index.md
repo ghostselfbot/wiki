@@ -26,5 +26,5 @@ Ghost is a powerful and customisable Discord selfbot designed to enhance user ex
 > | ![CleanShot 2025-05-16 at 9  36 19@2x](https://github.com/user-attachments/assets/570fc27d-5a30-4dfa-8644-0aed5d2a818a) | ![CleanShot 2025-05-16 at 9  36 35@2x](https://github.com/user-attachments/assets/e0a3350d-a5d9-4521-a964-014000d4fd6b) |
 > |---|---|
 
-> ℹ️ Note
+> ### ℹ️ Note
 > Please note that Ghost is developed on Mac OS which means the Windows build's may have issues. However, Ghost will work on Windows, Linux and Mac OS without issues when run from the source code! Please follow the steps above or this [setup guide](https://github.com/orgs/ghostselfbot/discussions/5) to insure proper installation!
