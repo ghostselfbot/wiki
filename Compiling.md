@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuration
+title: Compiling
 nav_order: 6
 ---
 
